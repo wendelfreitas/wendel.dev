@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react/jsx-one-expression-per-line": "off",
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "global-require": "off",
+    "import/no-cycle": "off",
+    "object-curly-newline": "off",
+    "comma-dangle": ["error", { "functions": "ignore" }]
+  }
+}

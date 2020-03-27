@@ -59,8 +59,8 @@ const GlobalStyles = createGlobalStyle`
   }
   img {
     display: block;
-  	width: 100%;
-  	height: auto;
+    width: 100%;
+    height: auto;
   }
 `;
 export default GlobalStyles;

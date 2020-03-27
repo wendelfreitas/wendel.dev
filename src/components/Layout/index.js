@@ -5,19 +5,17 @@ import { Wrapper, Main } from './styles';
 import GlobalStyle from '../../styles/global';
 import Particles from '../Particles';
 
-const Layout = ({ children }) => {
-  return (
-    <Wrapper>
-      <GlobalStyle />
-      <Sidebar />
-      <Particles />
-      <Main>{children}</Main>
-    </Wrapper>
-  );
-};
+const Layout = ({ children }) => (
+  <Wrapper>
+    <GlobalStyle />
+    <Sidebar />
+    <Particles />
+    <Main>{children}</Main>
+  </Wrapper>
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;

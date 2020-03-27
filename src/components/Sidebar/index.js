@@ -1,15 +1,9 @@
 import React from 'react';
-import {
-  FaRegUser,
-  FaTwitter,
-  FaLinkedinIn,
-  FaSuperpowers,
-  FaFacebookF,
-} from 'react-icons/fa';
+import { FaRegUser, FaTwitter, FaLinkedinIn, FaSuperpowers, FaFacebookF } from 'react-icons/fa';
 import { FiGithub, FiBook } from 'react-icons/fi';
 import { AiOutlineHome, AiOutlineTrophy } from 'react-icons/ai';
-import Avatar from '../Avatar';
 import styled from 'styled-components';
+import Avatar from '../Avatar';
 import { Wrapper } from './styles';
 
 const Default = `
@@ -85,26 +79,10 @@ const Sidebar = () => {
         <Blog size="25" />
       </Navigation>
       <Social>
-        <Twitter
-          onClick={() =>
-            handleSocialNetwork('https://twitter.com/hey_wendelzinho')
-          }
-        />
-        <Facebook
-          onClick={() =>
-            handleSocialNetwork('https://www.facebook.com/wendel.freitas.90/')
-          }
-        />
-        <Linkedin
-          onClick={() =>
-            handleSocialNetwork('https://twitter.com/hey_wendelzinho')
-          }
-        />
-        <Github
-          onClick={() =>
-            handleSocialNetwork('https://github.com/wendelfreitas')
-          }
-        />
+        <Twitter onClick={() => handleSocialNetwork('https://twitter.com/hey_wendelzinho')} />
+        <Facebook onClick={() => handleSocialNetwork('https://www.facebook.com/wendel.freitas.90/')} />
+        <Linkedin onClick={() => handleSocialNetwork('https://twitter.com/hey_wendelzinho')} />
+        <Github onClick={() => handleSocialNetwork('https://github.com/wendelfreitas')} />
       </Social>
     </Wrapper>
   );
