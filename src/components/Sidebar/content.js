@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaRegUser, FaSuperpowers } from 'react-icons/fa';
-import { FiBook } from 'react-icons/fi';
+import { FiBook, FiGithub } from 'react-icons/fi';
 import styled from 'styled-components';
 import { AiOutlineHome, AiOutlineTrophy } from 'react-icons/ai';
+import { FaTwitter, FaLinkedinIn, FaFacebookF, FaRegUser } from 'react-icons/fa';
 
 const Default = `
   &:hover {
@@ -23,15 +23,24 @@ const Achievements = styled(AiOutlineTrophy)`
   ${Default}
 `;
 
-const Skills = styled(FaSuperpowers)`
-  ${Default}
-`;
-
 const Blog = styled(FiBook)`
   ${Default}
 `;
 
-export default [
+const Twitter = styled(FaTwitter)`
+  ${Default}
+`;
+const Facebook = styled(FaFacebookF)`
+  ${Default}
+`;
+const Linkedin = styled(FaLinkedinIn)`
+  ${Default}
+`;
+const Github = styled(FiGithub)`
+  ${Default}
+`;
+
+export const links = [
   {
     id: 'Home',
     icon: <Home size="25" />,
@@ -48,13 +57,27 @@ export default [
     url: '/achievements'
   },
   {
-    id: 'Skills',
-    icon: <Skills size="20" />,
-    url: '/skills'
-  },
-  {
     id: 'Blog',
     icon: <Blog size="25" />,
     url: '/blog'
+  }
+];
+
+function handleSocialNetwork(url) {
+  return window.open(url, '__blank');
+}
+
+export const networks = [
+  {
+    icon: <Twitter onClick={() => handleSocialNetwork('https://twitter.com/hey_wendelzinho')} />
+  },
+  {
+    icon: <Facebook onClick={() => handleSocialNetwork('https://www.facebook.com/wendel.freitas.90/')} />
+  },
+  {
+    icon: <Linkedin onClick={() => handleSocialNetwork('https://www.linkedin.com/in/wendelfb/')} />
+  },
+  {
+    icon: <Github onClick={() => handleSocialNetwork('https://github.com/wendelfreitas')} />
   }
 ];
