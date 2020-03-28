@@ -34,7 +34,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Wrapper>
       <h1>404</h1>
-      <p>Já que voce chegou até aqui, vou te contar um segredo:</p>
+      <p>Já que você chegou até aqui, vou te contar um segredo:</p>
       <br />
       <p>Eu ainda não pisei na lua...</p>
     </Wrapper>
