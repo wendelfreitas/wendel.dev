@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
 import Layout from '../components/Layout';
+import Skill from '../components/Skill';
 import SEO from '../components/seo';
+import personal from '../utils/personal';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -34,18 +36,14 @@ const Description = styled.p`
   line-height: 1.5;
 `;
 
-const teste = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni dolorum, aspernatur neque dolore
-maxime, nemo eos consequuntur quis odio repellendus cum maiores ad possimus mollitia perferendis consectetur
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis ipsa architecto officia
-repudiandae reprehenderit atque, voluptates possimus. Magni neque asperiores omnis quas perferendis laborum
-maxime, nemo eos consequuntur quis odio repellendus cum maiores ad possimus mollitia perferendis consectetur
-maxime, nemo eos consequuntur quis odio repellendus cum maiores ad possimus mollitia perferendis consectetur
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis ipsa architecto officia
-repudiandae reprehenderit atque, voluptates possimus. Magni neque asperiores omnis quas perferendis laborum
-maxime, nemo eos consequuntur quis odio repellendus cum maiores ad possimus mollitia perferendis consectetur
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis ipsa architecto officia
-repudiandae reprehenderit atque, voluptates possimus. Magni neque asperiores omnis quas perferendis laborum
-molestias voluptatibus itaque autem qui? aliquid iusto!`;
+const SkillWrapper = styled.div`
+  height: 60vh;
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+`;
 
 const AboutPage = () => (
   <Layout>
@@ -53,15 +51,13 @@ const AboutPage = () => (
     <Wrapper>
       <AboutMeWrapper>
         <Title>Sobre Mim</Title>
-        <Description>{teste}</Description>
+        <Description>{personal.description}</Description>
       </AboutMeWrapper>
-      <div style={{ width: '50%' }}>
-        <img
-          alt="skdapo"
-          style={{ height: 400, width: 400, borderRadius: '50%' }}
-          src="https://scontent.fbau4-1.fna.fbcdn.net/v/t1.0-9/19601354_1384784881616151_3618330952444186094_n.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=TAOuP7YlcJ4AX-chPXE&_nc_ht=scontent.fbau4-1.fna&oh=925dca2cf21140220b0ffedc7641e693&oe=5EA3F2BE"
-        />
-      </div>
+      <SkillWrapper>
+        {personal.skills.map((skill) => (
+          <Skill key={skill.name} hability={skill} />
+        ))}
+      </SkillWrapper>
     </Wrapper>
   </Layout>
 );
