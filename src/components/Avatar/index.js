@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Image } from './styles';
+import { Image, Email } from './styles';
 
 const AVATAR_QUERY = graphql`
   query {
@@ -18,7 +18,15 @@ const AVATAR_QUERY = graphql`
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(AVATAR_QUERY);
 
-  return <Image fixed={avatarImage.childImageSharp.fixed} />;
+  function handleEmail() {
+    return window.open('mailto:wendelfreitasbranco@gmail.com');
+  }
+
+  return (
+    <Email type="button" onClick={() => handleEmail()}>
+      <Image fixed={avatarImage.childImageSharp.fixed} />
+    </Email>
+  );
 };
 
 export default Avatar;

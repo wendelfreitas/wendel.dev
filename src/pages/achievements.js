@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
-import Layout from '../components/Layout';
+import styled from 'styled-components';
 import Timeline from '../components/Timeline';
+import Layout from '../components/Layout';
 import SEO from '../components/seo';
 
 const Wrapper = styled.div`
