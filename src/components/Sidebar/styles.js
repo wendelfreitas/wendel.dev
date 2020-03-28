@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid var(--borders);
+  border-right: 1px solid #181818;
   background: #181818;
   display: flex;
   flex-direction: column;
@@ -13,4 +13,5 @@ export const Wrapper = styled.aside`
   color: #4d4d4e;
   text-align: center;
   width: 4rem;
+  z-index: 10;
 `;

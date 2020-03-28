@@ -7,6 +7,6 @@ export const Wrapper = styled.section`
 export const Main = styled.main`
   background: #16202c;
   position: absolute;
-  padding: 0 1rem 0 8rem;
+  padding: 0 1rem 0 ${({ padding }) => `${padding}rem`};
   width: 100%;
 `;
