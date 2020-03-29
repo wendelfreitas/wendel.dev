@@ -13,6 +13,7 @@
     "no-underscore-dangle": ["error", { "allow": ["_id"] }],
     "global-require": "off",
     "import/no-cycle": "off",
+    "react/no-danger": "off",
     "object-curly-newline": "off",
     "comma-dangle": ["error", { "functions": "ignore" }]
   }
