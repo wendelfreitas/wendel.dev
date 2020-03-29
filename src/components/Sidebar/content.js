@@ -3,10 +3,11 @@ import { FiBook, FiGithub } from 'react-icons/fi';
 import styled from 'styled-components';
 import { AiOutlineHome, AiOutlineTrophy } from 'react-icons/ai';
 import { FaTwitter, FaLinkedinIn, FaFacebookF, FaRegUser } from 'react-icons/fa';
+import { main } from '../../styles/themes';
 
 const Default = `
   &:hover {
-    color: #dd7e09;
+    color: ${main.orange};
     cursor: pointer;
   }
 `;

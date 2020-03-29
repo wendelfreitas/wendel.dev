@@ -10,7 +10,7 @@ export const Image = styled(Img)`
 `;
 
 export const Email = styled.button`
-  background-color: #181818;
+  background-color: ${({ theme }) => theme.black};
   border: none;
   width: 60px;
   height: 60px;

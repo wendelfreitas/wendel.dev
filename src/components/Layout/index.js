@@ -1,20 +1,24 @@
 import React from 'react';
 import { TransitionPortal } from 'gatsby-plugin-transition-link';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from 'styled-components';
 import Sidebar from '../Sidebar';
 import { Wrapper, Main } from './styles';
 import GlobalStyle from '../../styles/global';
 import Particles from '../Particles';
+import { main } from '../../styles/themes';
 
 const Layout = ({ children, padding }) => (
-  <Wrapper>
-    <GlobalStyle />
-    <TransitionPortal level="top">
-      <Sidebar />
-    </TransitionPortal>
-    <Particles />
-    <Main padding={padding}>{children}</Main>
-  </Wrapper>
+  <ThemeProvider theme={main}>
+    <Wrapper>
+      <GlobalStyle />
+      <TransitionPortal level="top">
+        <Sidebar />
+      </TransitionPortal>
+      <Particles />
+      <Main padding={padding}>{children}</Main>
+    </Wrapper>
+  </ThemeProvider>
 );
 
 Layout.propTypes = {

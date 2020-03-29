@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #f69723;
+  color: ${({ theme }) => theme.orange};
   font-size: 55px;
   margin-top: 10px;
   margin-bottom: 10px;

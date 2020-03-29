@@ -16,13 +16,13 @@ export const Wrapper = styled.div`
 
   h1 {
     font-size: 150px;
-    color: #dd7e09;
+    color: ${({ theme }) => theme.orange};
     padding: 0;
     margin: 20px;
   }
 
   p {
-    color: white;
+    color: ${({ theme }) => theme.text};
     font-weight: 500;
     font-style: italic;
     font-size: 20px;

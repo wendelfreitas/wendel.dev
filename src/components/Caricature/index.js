@@ -6,6 +6,7 @@ import media from 'styled-media-query';
 
 const CaricatureWrapper = styled(Img)`
   height: 45rem;
+  margin-top: 100px;
   width: 40rem;
 
   ${media.lessThan('small')`

@@ -4,15 +4,15 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const Wrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid #181818;
-  background: #181818;
+  border-right: 1px solid ${({ theme }) => theme.black};
+  background: ${({ theme }) => theme.black};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
   position: fixed;
   padding: 2rem 0 1rem 0;
-  color: #4d4d4e;
+  color: ${({ theme }) => theme.grey};
   text-align: center;
   width: 4rem;
   z-index: 10;
@@ -54,16 +54,16 @@ export const Social = styled.div`
 `;
 
 export const Link = styled(AniLink)`
-  color: #4d4d4e;
+  color: ${({ theme }) => theme.grey};
 `;
 
 export const LinkItem = styled.div`
   &:hover {
-    color: #dd7e09;
+    color: ${({ theme }) => theme.orange};
     cursor: pointer;
   }
 
   .active {
-    color: #dd7e09;
+    color: ${({ theme }) => theme.orange};
   }
 `;

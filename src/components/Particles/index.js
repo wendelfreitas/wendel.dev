@@ -3,14 +3,10 @@ import Particles from 'react-particles-js';
 
 function handleQuantityOfParticles() {
   if (window.screen.width < 500) {
-    return 50;
+    return 30;
   }
 
-  if (window.screen.width < 1200) {
-    return 130;
-  }
-
-  return 150;
+  return 100;
 }
 
 const ParticlesBg = memo(() => (

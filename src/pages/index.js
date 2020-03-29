@@ -9,6 +9,7 @@ import Caricature from '../components/Caricature';
 const Wrapper = styled.div`
   position: absolute;
   display: flex;
+  width: 90vw;
   flex: 1;
   height: 100vh;
   align-items: center;
@@ -35,13 +36,13 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: white;
+  color: ${({ theme }) => theme.text};
   font-size: ${({ size }) => `${size}px` || '70px'};
   margin: 0;
 `;
 
 const Name = styled.b`
-  color: #f69723;
+  color: ${({ theme }) => theme.orange};
   font-size: 55px;
   margin-top: 10px;
   margin-bottom: 10px;

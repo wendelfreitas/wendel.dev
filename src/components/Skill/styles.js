@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
 
 export const Name = styled.div`
   width: 80px;
-  background-color: #de7d09;
+  background-color: ${({ theme }) => theme.orange};
   color: white;
   padding: 10px;
   font-size: 14px;
@@ -37,7 +37,7 @@ export const Name = styled.div`
 `;
 
 export const Progress = styled.div`
-  background-color: #f69723;
+  background-color: ${({ theme }) => theme.brightOrange};
   height: 100%;
   color: white;
   display: flex;
@@ -51,7 +51,7 @@ export const Progress = styled.div`
 `;
 
 export const Bar = styled.div`
-  background-color: #4d4d4e;
+  background-color: ${({ theme }) => theme.grey};
   width: 30vw;
   ${media.lessThan('large')`
     width: 100%;
