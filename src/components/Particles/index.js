@@ -1,6 +1,18 @@
 import React, { memo } from 'react';
 import Particles from 'react-particles-js';
 
+function handleQuantityOfParticles() {
+  if (window.screen.width < 500) {
+    return 50;
+  }
+
+  if (window.screen.width < 1200) {
+    return 130;
+  }
+
+  return 150;
+}
+
 const ParticlesBg = memo(() => (
   <Particles
     height="100vh"
@@ -8,7 +20,7 @@ const ParticlesBg = memo(() => (
     params={{
       particles: {
         number: {
-          value: 100
+          value: handleQuantityOfParticles()
         },
         size: {
           value: 3,
