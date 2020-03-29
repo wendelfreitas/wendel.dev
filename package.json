@@ -23,7 +23,8 @@
     "react-icons": "^3.9.0",
     "react-particles-js": "^2.7.1",
     "react-vertical-timeline-component": "^2.5.0",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
