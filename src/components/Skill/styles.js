@@ -1,8 +1,27 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import media from 'styled-media-query';
+
+function animation(level) {
+  return keyframes`
+  from {
+    width: 0%
+  }
+
+  to {
+    width: ${level}%;
+  }
+`;
+}
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
+
+  ${media.lessThan('large')`
+    width: 100%;
+    margin: 10px 0;
+  `}
 `;
 
 export const Name = styled.div`
@@ -12,22 +31,29 @@ export const Name = styled.div`
   padding: 10px;
   font-size: 14px;
   font-weight: 500;
+  ${media.lessThan('large')`
+    width: 105px;
+  `}
 `;
 
 export const Progress = styled.div`
   background-color: #f69723;
-  width: ${({ level }) => `${level}%`};
   height: 100%;
   color: white;
   display: flex;
+  width: ${({ level }) => `${level}%`};
   justify-content: flex-end;
   align-items: center;
   font-size: 13px;
   padding-right: 10px;
   font-weight: 500;
+  animation: ${({ level }) => animation(level)} 1.5s;
 `;
 
 export const Bar = styled.div`
   background-color: #4d4d4e;
   width: 30vw;
+  ${media.lessThan('large')`
+    width: 100%;
+  `}
 `;

@@ -47,7 +47,7 @@ export const links = [
     url: '/'
   },
   {
-    id: 'about',
+    id: 'About',
     icon: <About size="20" />,
     url: '/about'
   },
@@ -69,15 +69,19 @@ function handleSocialNetwork(url) {
 
 export const networks = [
   {
+    id: 'Twitter',
     icon: <Twitter onClick={() => handleSocialNetwork('https://twitter.com/hey_wendelzinho')} />
   },
   {
+    id: 'Facebook',
     icon: <Facebook onClick={() => handleSocialNetwork('https://www.facebook.com/wendel.freitas.90/')} />
   },
   {
+    id: 'Linkedin',
     icon: <Linkedin onClick={() => handleSocialNetwork('https://www.linkedin.com/in/wendelfb/')} />
   },
   {
+    id: 'Github',
     icon: <Github onClick={() => handleSocialNetwork('https://github.com/wendelfreitas')} />
   }
 ];

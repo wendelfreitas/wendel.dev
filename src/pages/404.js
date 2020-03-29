@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 
@@ -13,6 +12,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   h1 {
     font-size: 150px;
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     color: white;
     font-weight: 500;
     font-style: italic;
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 

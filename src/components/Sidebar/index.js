@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Avatar from '../Avatar';
 import { links, networks } from './content';
 import { Wrapper, Navigation, Social, Link, LinkItem } from './styles';
@@ -17,7 +17,7 @@ const Sidebar = () => (
     </Navigation>
     <Social>
       {networks.map((network) => (
-        <>{network.icon}</>
+        <Fragment key={network.id}>{network.icon}</Fragment>
       ))}
     </Social>
   </Wrapper>

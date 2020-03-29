@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const Wrapper = styled.aside`
@@ -15,14 +16,29 @@ export const Wrapper = styled.aside`
   text-align: center;
   width: 4rem;
   z-index: 10;
+
+  ${media.lessThan('large')`
+    align-items: flex-start;
+    flex-direction: row;
+    height: 3rem;
+    padding: 0.3rem 2rem;
+    width: 100%;
+  `}
 `;
 
 export const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 150px;
   align-items: center;
+  height: 25%;
+  ${media.lessThan('large')`
+    flex-direction: row;
+    padding: 1rem;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+  `}
 `;
 
 export const Social = styled.div`
@@ -30,8 +46,11 @@ export const Social = styled.div`
   justify-content: space-between;
   flex-direction: column;
   height: 150px;
-
   align-items: center;
+
+  ${media.lessThan('large')`
+      display: none;
+  `}
 `;
 
 export const Link = styled(AniLink)`

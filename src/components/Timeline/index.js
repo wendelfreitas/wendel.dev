@@ -2,6 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaStar, FaGraduationCap, FaReact } from 'react-icons/fa';
 import { DiUnitySmall } from 'react-icons/di';
+import media from 'styled-media-query';
 import { MdWork } from 'react-icons/md';
 import styled from 'styled-components';
 import 'react-vertical-timeline-component/style.min.css';
@@ -10,6 +11,11 @@ export const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   overflow: auto;
+
+  ${media.lessThan('large')`
+    padding: 3rem 0 0 0;
+
+  `}
   .vertical-timeline-element-date {
     color: white;
   }
