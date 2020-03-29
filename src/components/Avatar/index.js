@@ -18,12 +18,8 @@ const AVATAR_QUERY = graphql`
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(AVATAR_QUERY);
 
-  function handleEmail() {
-    return window.open('mailto:wendelfreitasbranco@gmail.com');
-  }
-
   return (
-    <Email type="button" onClick={() => handleEmail()}>
+    <Email href="mailto:wendelfreitasbranco@gmail.com">
       <Image fixed={avatarImage.childImageSharp.fixed} />
     </Email>
   );

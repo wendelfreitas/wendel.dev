@@ -9,12 +9,10 @@ export const Image = styled(Img)`
   }
 `;
 
-export const Email = styled.button`
-  background-color: ${({ theme }) => theme.black};
-  border: none;
+export const Email = styled.a`
   width: 60px;
   height: 60px;
-
+  border: none;
   ${media.lessThan('large')`
     display: none;
   `}
