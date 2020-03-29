@@ -64,25 +64,25 @@ export const links = [
   }
 ];
 
-function handleSocialNetwork(url) {
-  return window.open(url, '__blank');
-}
-
 export const networks = [
   {
     id: 'Twitter',
-    icon: <Twitter onClick={() => handleSocialNetwork('https://twitter.com/hey_wendelzinho')} />
+    icon: <Twitter />,
+    url: 'https://twitter.com/hey_wendelzinho'
   },
   {
     id: 'Facebook',
-    icon: <Facebook onClick={() => handleSocialNetwork('https://www.facebook.com/wendel.freitas.90/')} />
+    icon: <Facebook />,
+    url: 'https://www.facebook.com/wendel.freitas.90/'
   },
   {
     id: 'Linkedin',
-    icon: <Linkedin onClick={() => handleSocialNetwork('https://www.linkedin.com/in/wendelfb/')} />
+    icon: <Linkedin />,
+    url: 'https://www.linkedin.com/in/wendelfb/'
   },
   {
     id: 'Github',
-    icon: <Github onClick={() => handleSocialNetwork('https://github.com/wendelfreitas')} />
+    icon: <Github />,
+    url: 'https://github.com/wendelfreitas'
   }
 ];

@@ -51,6 +51,10 @@ export const Social = styled.div`
   ${media.lessThan('large')`
       display: none;
   `}
+
+  a {
+    color: ${({ theme }) => theme.grey};
+  }
 `;
 
 export const Link = styled(AniLink)`
