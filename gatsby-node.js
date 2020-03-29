@@ -1,7 +1,55 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-// You can delete this file if you're not using it
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  // Ensures we are processing only markdown files
+  if (node.internal.type === 'MarkdownRemark') {
+    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: 'pages'
+    });
+
+    // Creates new query'able field with name of 'slug'
+    createNodeField({
+      node,
+      name: 'slug',
+      value: `blog/${slug.slice(12)}`
+    });
+  }
+};
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
+  return graphql(`
+    {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `).then((result) => {
+    const posts = result.data.allMarkdownRemark.edges;
+
+    posts.forEach(({ node, next, previous }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/blog-post.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          slug: node.fields.slug,
+          previousPost: next,
+          nextPost: previous
+        }
+      });
+    });
+  });
+};
