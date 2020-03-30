@@ -60,7 +60,7 @@ export const links = [
   {
     id: 'Blog',
     icon: <Blog size="25" />,
-    url: '/blog'
+    url: '/blog/'
   }
 ];
 
