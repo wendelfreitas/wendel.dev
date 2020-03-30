@@ -1,0 +1,43 @@
+---
+date: 2020-03-25 05:54:23
+title: How to become a open source hero
+description: And I'm not sure about the universe.
+category: Misc
+background: '#7AAB13'
+---
+
+First of all, I have to say that open source goes beyond just making git commits, pull requests and resolving difficult issues in famous repositories, software engineering is the closest we have of super powers. Why not use it to become a hero?
+I love my profession, so I always look for ways to change the world of software and reciprocate everything I have achieved in my career.
+Exist countless ways to change the software world through open source, here goes some ways and benefits to contribute efficiently.
+
+# Mentoring and Consulting ❤️
+
+Only when you've been on both sides do you realize how much it makes a difference. Mentor new developers, offer to help and encourage them to ask more questions, this will be great for you too because questions generate answers, answers generate discussions, discussions generate opinions, opinions generate conclusions and finally, conclusions open room for new questions. Don't be rigid about extremely complex codes for those at the beginning, but make it clear that there are other ways to do what he wants, some better than others.
+With this, you will increase your network, and you will learn a lot from the people you will help, regardless of the technical level people always have something new to teach you and then you will make new friends because they trusted you and felt more comfortable asking new questions without being judged. Be positive but also be realistic with the people you mentor, they are already concerned with the problems you have to solve, it is not for nothing that they resorted to you.
+
+# Answering Questions in a Community 🏐
+
+Every day has people with your doubts and problems to solve then he resorts to a community. If you be there you can answer these doubts and, of course, solve your doubts too. You can see more options to solute a problem, different opinions different results. This includes any doubt and anywhere (Slack, WhatsApp, Telegram, Discord or Stackoverflow).
+
+# Creating a Local Community :construction_worker:
+
+Always good to see people who want to change the world, so why not create a local community to share knowledge, meet new friends and try to improve your skills. You can do some presentations to improve your speech in public, teach new developers and improve the way that you share things, then when you are tired, talk about space to spend your time with your new friends, and finally learn so much about everything.
+
+# Making Side Projects :heart:
+
+  <p align="center">
+    <img width="250" style="border-radius: 5px" height="450" src="https://i.imgur.com/7CJSiNA.gif" alt="Intro">
+   </p>
+
+The best way to become an open source hero is making side projects. When you make complex projects, you need to solve complex problems, problems that other devs had/have, you learn a lot with that and teach too, my example. When I created [Animavita](https://github.com/wendelfreitas/animavita), a mobile app to rescue and adopt pets, I was trying to study how to scalability a GraphQL application, then when I published on a public repository in GitHub. People came to me, to discuss, to learn, and congratulate. This makes me happy and at this moment I realized, everything you make with purpose generates a chain of positive reactions, knowledge, constructive criticism and you have a chance to revolution things because people are engaged and in love with your project.
+
+# Finding/Solving issues in Projects :bug:
+
+When you are testing some packages it's very common to find some issues, make sure that the issues are in package not in your code if yes go to repository and create an issue and describe the problem, many repositories have a mold to create detailed issues to help other devs to find the same problem and fix then. So, if you want, clone this project and fix the problem then make a pull request, don't be afraid, cool people help you in this journey.
+
+You don't need to be a perfect engineer to make a difference in the software engineering world, all people around the world have super powers, they just don't know it. When you discover this, you find yourself, so just
+it's up to you to decide to expand or retract your super powers, but don't forget...
+
+  <p align="center">
+    <img  style="border-radius: 5px" src="https://pa1.narvii.com/6525/a195a1e97888a5afc07621cefe433de7f0a2cb48_hq.gif" alt="Intro">
+   </p>
