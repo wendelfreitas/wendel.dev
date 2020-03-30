@@ -1,5 +1,22 @@
 import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import media from 'styled-media-query';
+
+export const BackButton = styled(AniLink)`
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.text};
+  margin-top: 30px;
+  width: 180px;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    transition: color 0.5s;
+    color: ${({ theme }) => theme.brightOrange};
+  }
+`;
 
 export const Wrapper = styled.div`
   position: absolute;
