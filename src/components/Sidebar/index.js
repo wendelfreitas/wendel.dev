@@ -10,7 +10,15 @@ const Sidebar = () => (
     <Navigation>
       {links.map((link) => (
         <LinkItem key={link.id}>
-          <Link cover to={link.url} direction="up" bg={main.black} duration={0.6} activeClassName="active">
+          <Link
+            cover
+            to={link.url}
+            aria-label={link.id}
+            direction="up"
+            bg={main.black}
+            duration={0.6}
+            activeClassName="active"
+          >
             {link.icon}
           </Link>
         </LinkItem>

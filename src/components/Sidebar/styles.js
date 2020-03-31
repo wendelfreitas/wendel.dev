@@ -15,7 +15,6 @@ export const Wrapper = styled.aside`
   color: ${({ theme }) => theme.grey};
   text-align: center;
   width: 4rem;
-  z-index: 10;
 
   ${media.lessThan('large')`
     align-items: flex-start;
