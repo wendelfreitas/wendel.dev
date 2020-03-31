@@ -24,6 +24,7 @@ export default {
     { name: 'MongoDB', level: 50 },
     { name: 'ReactJS', level: 70 },
     { name: 'Laravel', level: 80 },
+    { name: 'AWS', level: 15 },
     { name: 'Docker', level: 25 }
   ]
 };

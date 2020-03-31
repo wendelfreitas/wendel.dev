@@ -61,6 +61,7 @@ export const Title = styled.h1`
 export const Description = styled.h2`
   font-size: 1.2rem;
   font-weight: 400;
+  line-height: 2;
 `;
 
 export const Date = styled.p`
@@ -87,9 +88,9 @@ export const Content = styled.section`
   iframe,
   .button-post {
     color: ${({ theme }) => theme.text};
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 2;
     letter-spacing: 0.06rem;
     padding: 0 1.4rem;
     ${media.lessThan('large')`

@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaStar, FaGraduationCap, FaReact } from 'react-icons/fa';
+import { IoLogoGameControllerA } from 'react-icons/io';
 import { DiUnitySmall } from 'react-icons/di';
 import media from 'styled-media-query';
 import { MdWork } from 'react-icons/md';
@@ -45,8 +46,8 @@ const Timeline = () => (
         iconStyle={styles.content}
         icon={<FaReact />}
       >
-        <Title>Lorem Ipsum</Title>
-        <h4>Miami, FL</h4>
+        <Title>Up Outsourcing!</Title>
+        <h4>Bauru, São Paulo</h4>
         <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -54,7 +55,7 @@ const Timeline = () => (
         date="2010 - 2011"
         contentStyle={styles.border}
         iconStyle={styles.content}
-        icon={<DiUnitySmall />}
+        icon={<MdWork />}
       >
         <Title color="black">Scaffold Education</Title>
         <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
@@ -62,27 +63,63 @@ const Timeline = () => (
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2008 - 2010"
+        date="2016"
         contentStyle={styles.border}
         iconStyle={styles.content}
-        icon={<MdWork />}
+        icon={<DiUnitySmall />}
       >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
+        <Title color="black">This Mig!</Title>
+        <h4 className="vertical-timeline-element-subtitle">Unity</h4>
+        <p>
+          No último ano do CTI eu queria muito por meus conhecimentos à prova, então, decidi fazer o
+          meu primeiro jogo. This Mig! é um infinity fall em pixel art que fazia qualquer um ficar
+          nervoso. Por mais que ele era um infinity fall, ele tinha um final que era um easter egg,
+          e à propósito, ninguém encontrou.
+        </p>
+        <br />
+        <a
+          ara-label="This Mig!"
+          href="https://miro.medium.com/max/300/1*rFmmyMOaYHq2ScfAL9mE-g.jpeg"
+          target="__blank"
+        >
+          Visualizar imagem do jogo
+        </a>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2010 - 2011"
+        date="2014 - 2016"
         contentStyle={styles.border}
         iconStyle={styles.content}
         icon={<FaGraduationCap />}
       >
-        <Title color="black">Scaffold Education</Title>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+        <Title color="black">Colégio Técnico Industrial (CTI - Unesp)</Title>
+
+        <h4 className="vertical-timeline-element-subtitle">Bauru, São Paulo</h4>
+        <p>
+          Amigos eu achei que sabia programar, foi ai que eu descobri que eu ia tomar muito tapa na
+          cara nessa vida. Comecei meus estudos no CTI em 2014, onde toda minha base de conhecimento
+          foi construída e onde muitas amizades foram feitas, terminei o curso e me formei em 2016.
+        </p>
       </VerticalTimelineElement>
-      <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} icon={<FaStar />} />
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2012 - 2013"
+        contentStyle={styles.border}
+        iconStyle={styles.content}
+        icon={<IoLogoGameControllerA />}
+      >
+        <Title color="black">Hello World</Title>
+        <h4 className="vertical-timeline-element-subtitle">Mundo RPG Maker</h4>
+
+        <p>
+          Meu primeiro contato com o universo dos códigos, iniciei no mundo do desenvolvimento como
+          criador de jogos usando RPG Maker XP e programando em RGSS.
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+        icon={<FaStar />}
+      />
     </VerticalTimeline>
   </Wrapper>
 );

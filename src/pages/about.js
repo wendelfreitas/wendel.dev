@@ -59,8 +59,7 @@ const SkillWrapper = styled.div`
 
   ${media.lessThan('large')`
     width: 100%;
-    max-height: 1300px;
-    height: 1300px;
+    margin: 2rem 0;
   `}
 `;
 

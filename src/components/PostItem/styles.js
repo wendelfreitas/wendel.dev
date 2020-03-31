@@ -60,7 +60,6 @@ export const Time = styled.p`
   color: white !important;
 `;
 export const Description = styled.p`
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
   color: white !important;
 `;

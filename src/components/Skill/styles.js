@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 15px 0;
 
   ${media.lessThan('large')`
     width: 100%;

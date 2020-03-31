@@ -3,6 +3,7 @@ import media from 'styled-media-query';
 
 export const Wrapper = styled.section`
   display: flex;
+  overflow: hidden;
   ${media.lessThan('large')`
     flex-direction: column;
   `}
