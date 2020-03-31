@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wendel Freitas`,
-    description: `A blog about javascript, bleeding edge, open source and cool developer life style.`,
+    description: `Portfólio e mais um dev-blog sobre desenvolvimento de software, bleeding edge, open source e estilo de vida interessante para desenvolvedores.`,
     author: `@wendelfreitas`,
     siteUrl: 'https://wendel.dev'
   },
@@ -62,14 +62,15 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Wendel de Freitas Branco`,
-        short_name: `Wendel Freitas`,
+        short_name: `wendel.dev`,
         start_url: `/`,
         background_color: `#222`,
         theme_color: `#dd7e09`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
-    }, // this (optional) plugin enables Progressive Web App + Offline functionality
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`
   ]
