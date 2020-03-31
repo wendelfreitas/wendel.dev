@@ -56,6 +56,7 @@ const BlogList = ({ data, pageContext }) => {
               }
             }) => (
               <PostItem
+                key={slug}
                 slug={slug}
                 timeToRead={timeToRead}
                 title={title}
