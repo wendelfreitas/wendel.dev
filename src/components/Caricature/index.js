@@ -37,7 +37,7 @@ const CARICATURE_QUERY = graphql`
 const Caricature = () => {
   const { caricatureImage } = useStaticQuery(CARICATURE_QUERY);
 
-  return <CaricatureWrapper fluid={caricatureImage.childImageSharp.fluid} />;
+  return <CaricatureWrapper alt="Caricature" fluid={caricatureImage.childImageSharp.fluid} />;
 };
 
 export default Caricature;

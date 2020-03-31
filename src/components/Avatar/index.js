@@ -19,7 +19,7 @@ const Avatar = () => {
   const { avatarImage } = useStaticQuery(AVATAR_QUERY);
 
   return (
-    <Email href="mailto:wendelfreitasbranco@gmail.com">
+    <Email aria-label="e-mail" href="mailto:wendelfreitasbranco@gmail.com">
       <Image fixed={avatarImage.childImageSharp.fixed} />
     </Email>
   );
