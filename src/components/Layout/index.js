@@ -11,11 +11,11 @@ import { main } from '../../styles/themes';
 const Layout = ({ children, padding }) => (
   <ThemeProvider theme={main}>
     <Wrapper>
+      <Particles />
       <GlobalStyle />
       <TransitionPortal level="top">
         <Sidebar />
       </TransitionPortal>
-      <Particles />
       <Main padding={padding}>{children}</Main>
     </Wrapper>
   </ThemeProvider>

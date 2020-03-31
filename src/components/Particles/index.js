@@ -2,7 +2,9 @@ import React, { memo } from 'react';
 import Particles from 'react-particles-js';
 
 function handleQuantityOfParticles() {
-  if (window.screen.width < 500) {
+  const windowGlobal = typeof window !== 'undefined' && window;
+
+  if (windowGlobal.innerWidth < 500) {
     return 30;
   }
 
