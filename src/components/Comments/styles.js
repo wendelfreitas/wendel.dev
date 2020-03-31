@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 
 export const Wrapper = styled.section`
   margin: auto;
-  width: 500px;
+  width: 90vw;
   max-width: 100rem;
   padding: 3rem 10rem 3rem;
   ${media.lessThan('large')`
