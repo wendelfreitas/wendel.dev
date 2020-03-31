@@ -40,8 +40,8 @@ const BlogList = ({ data, pageContext }) => {
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/blog/' : `/page/${currentPage - 1}`;
-  const nextPage = `/page/${currentPage + 1}`;
+  const prevPage = currentPage - 1 === 1 ? '/blog/' : `blog/page/${currentPage - 1}`;
+  const nextPage = `blog/page/${currentPage + 1}`;
   return (
     <Layout padding={0}>
       <Wrapper>

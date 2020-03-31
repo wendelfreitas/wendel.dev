@@ -60,7 +60,7 @@ export const Title = styled.h1`
 
 export const Description = styled.h2`
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 export const Date = styled.p`
@@ -86,7 +86,7 @@ export const Content = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: white;
+    color: ${({ theme }) => theme.text};
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.7;
@@ -137,13 +137,13 @@ export const Content = styled.section`
     `}
   }
   blockquote {
-    color: var(--postColor);
-    border-left: 0.3rem solid var(--highlight);
+    color: ${({ theme }) => theme.text};
+    border-left: 0.3rem solid ${({ theme }) => theme.brightOrange};
     padding: 0 1.875rem;
     margin: 3.125rem auto;
   }
   hr {
-    border: 1px solid var(--borders);
+    border: 1px solid ${({ theme }) => theme.orange};
     margin: 3rem auto;
   }
   #twitter-widget-0,
@@ -212,12 +212,12 @@ export const Content = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--highlight);
+    border-bottom: 1px dashed ${({ theme }) => theme.brightOrange};
+    color: ${({ theme }) => theme.brightOrange};
     text-decoration: none;
     transition: opacity 0.5s;
     svg {
-      color: var(--postColor);
+      color: ${({ theme }) => theme.text};
     }
     &:hover {
       opacity: 0.8;

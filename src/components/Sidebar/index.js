@@ -17,6 +17,7 @@ const Sidebar = () => (
             direction="up"
             bg={main.black}
             duration={0.6}
+            partiallyActive={link.url === '/blog/'}
             activeClassName="active"
           >
             {link.icon}

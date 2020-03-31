@@ -3,6 +3,8 @@ import { graphql } from 'gatsby';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
+import RecommendedPost from '../components/RecommendedPost';
+import Comments from '../components/Comments';
 import SEO from '../components/seo';
 import {
   Wrapper,
@@ -15,8 +17,10 @@ import {
 } from '../components/Post/styles';
 import { main } from '../styles/themes';
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark;
+  const next = pageContext.nextPost;
+  const previous = pageContext.previousPost;
   return (
     <Layout padding={0}>
       <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
@@ -25,7 +29,7 @@ const BlogPost = ({ data }) => {
           <Date>
             {post.frontmatter.date} • {post.timeToRead} min de leitura
           </Date>
-          <BackButton cover to="/blog" direction="up" bg={main.black} duration={0.6}>
+          <BackButton cover to="/blog/" direction="up" bg={main.black} duration={0.6}>
             <FaLongArrowAltLeft size={30} /> Voltar para listagem
           </BackButton>
           <Title>{post.frontmatter.title}</Title>
@@ -34,6 +38,8 @@ const BlogPost = ({ data }) => {
         <Content>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Content>
+        <RecommendedPost next={next} previous={previous} />
+        <Comments url={post.fields.slug} title={post.frontmatter.title} />
       </Wrapper>
     </Layout>
   );
@@ -53,6 +59,10 @@ BlogPost.propTypes = {
       html: PropTypes.string,
       timeToRead: PropTypes.number
     })
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    nextPost: PropTypes.string,
+    previousPost: PropTypes.string
   }).isRequired
 };
 
