@@ -42,7 +42,7 @@ const Timeline = () => (
         className="vertical-timeline-element--work"
         contentStyle={styles.content}
         contentArrowStyle={styles.arrow}
-        date="2011 - present"
+        date="atualmente"
         iconStyle={styles.content}
         icon={<FaReact />}
       >
@@ -58,7 +58,7 @@ const Timeline = () => (
         icon={<MdWork />}
       >
         <Title color="black">Scaffold Education</Title>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+        <h4 className="vertical-timeline-element-subtitle">Bauru, São Paulo</h4>
         <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement

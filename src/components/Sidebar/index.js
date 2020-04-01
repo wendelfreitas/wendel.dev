@@ -27,7 +27,7 @@ const Sidebar = () => (
     </Navigation>
     <Social>
       {networks.map((network) => (
-        <a key={network.id} href={network.url} target="__blank">
+        <a aria-label={network.id} key={network.id} href={network.url} target="__blank">
           {network.icon}
         </a>
       ))}
