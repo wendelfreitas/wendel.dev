@@ -35,6 +35,11 @@ const styles = {
   arrow: { borderRight: '7px solid #f69723' }
 };
 
+const ExternalLink = styled.a`
+  color: ${({ theme }) => theme.orange};
+  text-decoration: none;
+`;
+
 const Timeline = () => (
   <Wrapper>
     <VerticalTimeline>
@@ -44,22 +49,75 @@ const Timeline = () => (
         contentArrowStyle={styles.arrow}
         date="atualmente"
         iconStyle={styles.content}
-        icon={<FaReact />}
+        icon={<MdWork />}
       >
         <Title>Up Outsourcing!</Title>
         <h4>Bauru, São Paulo</h4>
-        <p>Creative Direction, User Experience, Visual Design, Project Management, Team Leading</p>
+        <p>
+          Desenvolvedor PHP e ReactJS, trabalhando com um desafio na àrea de Engenharia Civil
+          utilizando Symfony.
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2010 - 2011"
+        date="2019"
+        contentStyle={styles.border}
+        iconStyle={styles.content}
+        icon={<FaReact />}
+      >
+        <Title color="black">Animavita</Title>
+        <h4 className="vertical-timeline-element-subtitle">
+          React Native, GraphQL, Apollo, NodeJS e MongoDB
+        </h4>
+        <p>
+          Meu primerio aplicativo open source, Animavita é um projeto para ajudar os animais a serem
+          adotados e resgatados. Usa uma stack de tecnologias modernas e serviços como notificações
+          push. Você pode ver todo meu trabalho acessando o repositório do Animavita no GitHub{' '}
+          <ExternalLink aria-label="animavita" href="https://github.com/wendelfreitas/animavita">
+            clicando aqui
+          </ExternalLink>
+          .
+        </p>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2017-2019"
         contentStyle={styles.border}
         iconStyle={styles.content}
         icon={<MdWork />}
       >
         <Title color="black">Scaffold Education</Title>
         <h4 className="vertical-timeline-element-subtitle">Bauru, São Paulo</h4>
-        <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+        <p>
+          Meu primeiro emprego, atuando como desenvolvedor PHP com foco em laravel de uma plataforma
+          de aprendizagem à distância, trabalhei com micro-serviços e tive meu primeiro contato com
+          ReactJS.
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2016"
+        contentStyle={styles.border}
+        iconStyle={styles.content}
+        icon={<DiUnitySmall />}
+      >
+        <Title color="black">Soloquiz</Title>
+        <h4 className="vertical-timeline-element-subtitle">Unity</h4>
+        <p>
+          Após finalizar o CTI, decidi criar meu segundo jogo e assim como This Mig!, este também
+          foi desenvolvido em C# na game engine Unity. Soloquiz foi um trivia game com perguntas e
+          respostas do mundo de League of Legends, com um sistema de login via facebook para salvar
+          os ranking.
+        </p>
+        <br />
+        <ExternalLink
+          aria-label="Soloquiz!"
+          href="https://miro.medium.com/max/300/1*TU5v1MO5YJ9yTFlbinsuVA.png"
+          target="__blank"
+        >
+          Clique aqui para visualizar a imagem do jogo
+        </ExternalLink>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -72,18 +130,18 @@ const Timeline = () => (
         <h4 className="vertical-timeline-element-subtitle">Unity</h4>
         <p>
           No último ano do CTI eu queria muito por meus conhecimentos à prova, então, decidi fazer o
-          meu primeiro jogo. This Mig! é um infinity fall em pixel art que fazia qualquer um ficar
-          nervoso. Por mais que ele era um infinity fall, ele tinha um final que era um easter egg,
-          e à propósito, ninguém encontrou.
+          meu primeiro jogo. This Mig! (This must be a impossible game!) é um jogo de infinity fall
+          em pixel art desenvolvido em C# com a plataforma Unity. E devo dizer que foi um jogo que
+          fazia qualquer um ficar nervoso.
         </p>
         <br />
-        <a
-          ara-label="This Mig!"
+        <ExternalLink
+          aria-label="This Mig!"
           href="https://miro.medium.com/max/300/1*rFmmyMOaYHq2ScfAL9mE-g.jpeg"
           target="__blank"
         >
-          Visualizar imagem do jogo
-        </a>
+          Clique aqui para visualizar a imagem do jogo
+        </ExternalLink>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"

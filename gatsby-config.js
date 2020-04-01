@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wendel Freitas`,
-    description: `Portfólio e mais um dev-blog sobre desenvolvimento de software, bleeding edge, open source e um estilo de vida um tanto quanto interessante para um desenvolvedor.`,
+    description: `Site pessoal e blog sobre desenvolvimento de software, bleeding edge, open source e maluquices extremamente interessantes para aqueles que gostam de aprender e criar coisas novas.`,
     author: `@wendelfreitas`,
     siteUrl: 'https://wendel.dev'
   },
@@ -64,7 +64,7 @@ module.exports = {
         name: `Wendel de Freitas Branco`,
         short_name: `wendel.dev`,
         start_url: `/`,
-        background_color: `#222`,
+        background_color: `#ffffff`,
         theme_color: `#dd7e09`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
