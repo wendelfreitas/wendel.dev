@@ -50,11 +50,11 @@ const Description = styled.p`
 `;
 
 const SkillWrapper = styled.div`
-  height: 60vh;
-  margin-top: 5rem;
+  height: 100vh;
+  margin-top: 0rem;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 
   ${media.lessThan('large')`

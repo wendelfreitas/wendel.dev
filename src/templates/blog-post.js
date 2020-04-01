@@ -23,7 +23,11 @@ const BlogPost = ({ data, pageContext }) => {
   const previous = pageContext.previousPost;
   return (
     <Layout padding={0}>
-      <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      />
       <Wrapper>
         <Header>
           <Date>
@@ -54,7 +58,8 @@ BlogPost.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         description: PropTypes.string,
-        date: PropTypes.string
+        date: PropTypes.string,
+        image: PropTypes.string
       }),
       html: PropTypes.string,
       timeToRead: PropTypes.number
