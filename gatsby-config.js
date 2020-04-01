@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wendel Freitas`,
-    description: `Meu portfólio e mais um dev-blog sobre desenvolvimento de software, bleeding edge, open source e um estilo de vida um tanto quanto interessante para um desenvolvedor.`,
+    description: `Portfólio e mais um dev-blog sobre desenvolvimento de software, bleeding edge, open source e um estilo de vida um tanto quanto interessante para um desenvolvedor.`,
     author: `@wendelfreitas`,
     siteUrl: 'https://wendel.dev'
   },
