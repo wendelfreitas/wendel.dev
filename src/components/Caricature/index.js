@@ -26,7 +26,7 @@ const CARICATURE_QUERY = graphql`
   query {
     caricatureImage: file(relativePath: { eq: "caricature.png" }) {
       childImageSharp {
-        fluid(maxWidth: 650) {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const AchievementsPage = () => (
   <Layout padding={0}>
-    <SEO title="Achievements" />
+    <SEO title="Conquistas" />
     <Wrapper>
       <Timeline />
     </Wrapper>
