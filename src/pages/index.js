@@ -42,7 +42,7 @@ const Title = styled.h1`
 `;
 
 const Name = styled.b`
-  color: ${({ theme }) => theme.orange};
+  color: ${({ theme }) => theme.brightOrange};
   font-size: 55px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -55,18 +55,24 @@ const Subtitle = styled.p`
   margin: 20px 0 0 0;
 `;
 
+const Greetings = styled.div`
+  ${media.lessThan('large')`
+    padding: 0 2rem;
+  `}
+`;
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-      <div>
+      <Greetings>
         <Title size={60}>Olá, </Title>
         <Title size={50}>
           Eu sou <Name>{author.name}</Name>,
         </Title>
         <Title size={55}>{author.position}</Title>
         <Subtitle>{author.subtitle}</Subtitle>
-      </div>
+      </Greetings>
       <div>
         <Caricature />
       </div>

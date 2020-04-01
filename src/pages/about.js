@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: ${({ theme }) => theme.orange};
+  color: ${({ theme }) => theme.brightOrange};
   font-size: 55px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -65,7 +65,7 @@ const SkillWrapper = styled.div`
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Sobre mim" />
     <Wrapper>
       <AboutMeWrapper>
         <Title>Sobre Mim</Title>
