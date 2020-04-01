@@ -5,6 +5,25 @@ const GlobalStyles = createGlobalStyle`
    v2.0 | 20110126
    License: none (public domain)
   */
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px ${({ theme }) => theme.black}; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.brightOrange}; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${({ theme }) => theme.brightOrange}; 
+  }
+
   html, body, div, span, applet, object, iframe,
   h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -32,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
+    overflow: hidden;
   }
   ol, ul {
     list-style: none;
