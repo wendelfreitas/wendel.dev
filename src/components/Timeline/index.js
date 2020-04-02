@@ -1,6 +1,6 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { FaStar, FaGraduationCap, FaReact } from 'react-icons/fa';
+import { FaStar, FaGraduationCap, FaReact, FaMicrophoneAlt } from 'react-icons/fa';
 import { IoLogoGameControllerA } from 'react-icons/io';
 import { DiUnitySmall } from 'react-icons/di';
 import media from 'styled-media-query';
@@ -54,7 +54,7 @@ const Timeline = () => (
         <Title>Up Outsourcing!</Title>
         <h4>Bauru, São Paulo</h4>
         <p>
-          Desenvolvedor PHP e ReactJS, trabalhando com um desafio na àrea de Engenharia Civil
+          Desenvolvedor PHP e ReactJS, trabalhando com um desafio na área de Engenharia Civil
           utilizando Symfony.
         </p>
       </VerticalTimelineElement>
@@ -74,6 +74,28 @@ const Timeline = () => (
           adotados e resgatados. Usa uma stack de tecnologias modernas e serviços como notificações
           push. Você pode ver todo meu trabalho acessando o repositório do Animavita no GitHub{' '}
           <ExternalLink aria-label="animavita" href="https://github.com/wendelfreitas/animavita">
+            clicando aqui
+          </ExternalLink>
+          .
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2018"
+        contentStyle={styles.border}
+        iconStyle={styles.content}
+        icon={<FaMicrophoneAlt />}
+      >
+        <Title color="black">Palestra sobre React Native</Title>
+        <h4 className="vertical-timeline-element-subtitle">NeoAssist, Bauru - SP</h4>
+        <p>
+          Tenho problemas em falar em público, não posso negar, pra tentar amenizar um pouco isso
+          resolvi realizar o sonho de palestrar. Foi então que em 30/10/2018 realizei minha primeira
+          palestra pelo Dev.talks em Bauru sobre React Native, você pode acessar o link dos slides{' '}
+          <ExternalLink
+            aria-label="palestra"
+            href="https://devtalksbauru.github.io/posts/23-introducao-ao-universo-react-native"
+          >
             clicando aqui
           </ExternalLink>
           .
