@@ -90,9 +90,9 @@ const AboutPage = () => (
           quem sabia menos e aprender com quem sabe mais, dei minha primeira palestra com o foco em
           React Native e desenvolvi diversas aplicações com algumas tecnologias atuais. Adoro falar
           sobre a vida e entender como as pessoas olham e aprendem sobre desenvolvimento, começar a
-          entender as pessoas foi o que me manteve pé no chão e com ainda mais vontade de continuar
-          estudando e escrevendo códigos, pois, descobri maneiras diferentes de compartilhar
-          conhecimento e fui retribuído de várias maneiras positivas.
+          entender as pessoas foi o que me manteve &quot;pé no chão&quot; e com ainda mais vontade
+          de continuar estudando e escrevendo códigos, pois, descobri maneiras diferentes de
+          compartilhar conhecimento e fui retribuído de várias maneiras positivas.
           <br />
           <br />
           Se quiser conversar comigo, tirar dúvidas ou pedir alguma ajuda é só me mandar um e-mail
