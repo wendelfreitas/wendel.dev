@@ -73,7 +73,11 @@ const Timeline = () => (
           Meu primerio aplicativo open source, Animavita é um projeto para ajudar os animais a serem
           adotados e resgatados. Usa uma stack de tecnologias modernas e serviços como notificações
           push. Você pode ver todo meu trabalho acessando o repositório do Animavita no GitHub{' '}
-          <ExternalLink aria-label="animavita" href="https://github.com/wendelfreitas/animavita">
+          <ExternalLink
+            aria-label="animavita"
+            href="https://github.com/wendelfreitas/animavita"
+            target="__blank"
+          >
             clicando aqui
           </ExternalLink>
           .
@@ -94,6 +98,7 @@ const Timeline = () => (
           palestra pelo Dev.talks em Bauru sobre React Native, você pode acessar o link dos slides{' '}
           <ExternalLink
             aria-label="palestra"
+            target="__blank"
             href="https://devtalksbauru.github.io/posts/23-introducao-ao-universo-react-native"
           >
             clicando aqui
