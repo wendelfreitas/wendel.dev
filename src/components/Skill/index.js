@@ -8,7 +8,7 @@ const Skill = ({ hability }) => (
       <b>{hability.name}</b>
     </Name>
     <Bar>
-      <Progress level={hability.level}>{hability.level}%</Progress>
+      <Progress level={hability.level} />
     </Bar>
   </Wrapper>
 );
