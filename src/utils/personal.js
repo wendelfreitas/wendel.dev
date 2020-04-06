@@ -8,7 +8,7 @@ export default {
     { name: 'GraphQL', level: 60 },
     { name: 'RN', level: 65 },
     { name: 'Apollo', level: 45 },
-    { name: 'Mysql', level: 85 },
+    { name: 'MySQL', level: 85 },
     { name: 'MongoDB', level: 50 },
     { name: 'ReactJS', level: 70 },
     { name: 'Laravel', level: 80 },
