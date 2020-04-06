@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
   color: white;
   max-width: 100vw;
-  padding: 3rem 0 2rem 6.5rem;
+  padding: 3rem 11rem 2rem 11.5rem;
   ${media.lessThan('large')`
     padding: 5rem 0 2rem 1rem;
     margin: 0;
@@ -72,7 +72,8 @@ export const Date = styled.p`
 export const Content = styled.section`
   margin: auto;
   max-width: 100vw;
-  padding: 2rem 5rem;
+  padding: 2rem 10rem;
+
   ${media.lessThan('large')`
     padding: 2rem 0;
     max-width: 100%;
