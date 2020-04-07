@@ -14,13 +14,12 @@ const Wrapper = styled.div`
   width: 100vw;
   align-items: center;
   justify-content: space-between;
-  padding-left: 3rem;
 
   ${media.lessThan('large')`
     flex-direction: column;
     padding: 5rem 1.5rem;
-    align-items: center;
     overflow: auto;
+    height: auto;
   `}
 `;
 
@@ -32,13 +31,11 @@ const Title = styled.h1`
 `;
 
 const AboutMeWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   max-width: 40%;
   text-align: justify;
 
   ${media.lessThan('large')`
-      max-width: 100%;
+    max-width: 100%;
   `}
 `;
 
@@ -50,11 +47,8 @@ const Description = styled.p`
 `;
 
 const SkillWrapper = styled.div`
-  height: 100vh;
-  margin-top: 0rem;
   width: 50%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 
   ${media.lessThan('large')`
