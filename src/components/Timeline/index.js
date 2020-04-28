@@ -19,6 +19,11 @@ export const Wrapper = styled.div`
   `}
   .vertical-timeline-element-date {
     color: white;
+
+    ${media.lessThan('large')`
+      color: black;
+      margin-top: 15px;
+    `}
   }
 `;
 
