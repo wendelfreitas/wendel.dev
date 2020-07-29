@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper, Name, Progress, Bar } from './styles';
 
-const Skill = ({ hability }) => (
+const Skill = ({ ability }) => (
   <Wrapper>
     <Name>
-      <b>{hability.name}</b>
+      <b>{ability.name}</b>
     </Name>
     <Bar>
-      <Progress level={hability.level} />
+      <Progress level={ability.level} />
     </Bar>
   </Wrapper>
 );
 
 Skill.propTypes = {
-  hability: PropTypes.shape({
+  ability: PropTypes.shape({
     name: PropTypes.string,
     level: PropTypes.number
   }).isRequired

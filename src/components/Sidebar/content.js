@@ -2,7 +2,7 @@ import React from 'react';
 import { FiBook, FiGithub } from 'react-icons/fi';
 import styled from 'styled-components';
 import { AiOutlineHome, AiOutlineTrophy } from 'react-icons/ai';
-import { FaTwitter, FaLinkedinIn, FaFacebookF, FaRegUser } from 'react-icons/fa';
+import { FaTwitter, FaLinkedinIn, FaFacebookF, FaRegUser, FaDev } from 'react-icons/fa';
 import { main } from '../../styles/themes';
 
 const Default = `
@@ -38,6 +38,10 @@ const Linkedin = styled(FaLinkedinIn)`
   ${Default}
 `;
 const Github = styled(FiGithub)`
+  ${Default}
+`;
+
+const Devto = styled(FaDev)`
   ${Default}
 `;
 
@@ -84,5 +88,10 @@ export const networks = [
     id: 'Github',
     icon: <Github />,
     url: 'https://github.com/wendelfreitas'
+  },
+  {
+    id: 'Dev.to',
+    icon: <Devto size="20" />,
+    url: 'https://dev.to/wendelfreitas'
   }
 ];

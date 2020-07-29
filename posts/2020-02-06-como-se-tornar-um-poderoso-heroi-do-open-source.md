@@ -1,8 +1,9 @@
 ---
 date: 2020-02-06 05:54:23
 title: Como se tornar um poderoso herói do open source
-description: Desenvolver é o mais próximo que temos de se ter super poderes. Por que não usá-la para se tornar um herói?
-category: mentory
+description: Desenvolver é o mais próximo que temos de se ter super poderes. Por que não usá-los para se tornar um herói?
+icon: FaMedal
+size: 30
 image: '/assets/img/super-hero.jpg'
 ---
 

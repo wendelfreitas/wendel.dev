@@ -58,12 +58,6 @@ export const Title = styled.h1`
   `}
 `;
 
-export const Description = styled.h2`
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 2;
-`;
-
 export const Date = styled.p`
   font-size: 1rem;
   font-weight: 500;
@@ -71,8 +65,9 @@ export const Date = styled.p`
 
 export const Content = styled.section`
   margin: auto;
-  max-width: 100vw;
-  padding: 2rem 10rem;
+  max-width: 80vw;
+  padding: 0 10rem;
+  padding-bottom: 2rem;
 
   ${media.lessThan('large')`
     padding: 2rem 0;
@@ -89,10 +84,10 @@ export const Content = styled.section`
   iframe,
   .button-post {
     color: ${({ theme }) => theme.text};
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    line-height: 2;
-    letter-spacing: 0.06rem;
+    line-height: 2.1;
+    letter-spacing: 0rem;
     padding: 0 1.4rem;
     ${media.lessThan('large')`
       padding: 0 1rem;
@@ -158,12 +153,12 @@ export const Content = styled.section`
   h3,
   h4,
   h5 {
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.069rem;
     line-height: 1.4;
   }
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     ${media.lessThan('large')`
       font-size: 1.875rem;
     `}

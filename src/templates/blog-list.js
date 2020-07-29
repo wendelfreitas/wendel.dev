@@ -51,7 +51,7 @@ const BlogList = ({ data, pageContext }) => {
             ({
               node: {
                 fields: { slug },
-                frontmatter: { title, description, date },
+                frontmatter: { title, description, date, icon, size },
                 timeToRead
               }
             }) => (
@@ -60,6 +60,8 @@ const BlogList = ({ data, pageContext }) => {
                 slug={slug}
                 timeToRead={timeToRead}
                 title={title}
+                icon={icon}
+                size={size}
                 description={description}
                 date={date}
               />
@@ -92,7 +94,8 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            category
+            icon
+            size
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
             title

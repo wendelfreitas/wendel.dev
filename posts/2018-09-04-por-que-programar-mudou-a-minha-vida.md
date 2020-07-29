@@ -2,9 +2,12 @@
 date: 2018-09-04 05:54:23
 title: Por que programar mudou a minha vida...
 description: A história de um programador não tão convencional e completamente apaixonado pelo universo dos códigos.
-category: history
-image: '/assets/img/love-coding.jpeg'
+icon: FaRegComments
+size: 30
+image: '/assets/img/code-life.jpg'
 ---
+
+![Vida de desenvolvedor](/assets/img/code-life.jpg)
 
 Se você veio até aqui em busca de "12 maneiras para ficar rico após aprender programação", sinto-lhe dizer, não vai passar de uma história de como e por que aprender a programar mudou a minha vida de muitas formas. Para isso, eu preciso contar quem sou, bom eu sou Wendel, a maioria das pessoas me chamam de Wendelzinho, Wendeus ou Wuendeu ( ̶M̶a̶i̶s̶ ̶e̶s̶p̶e̶c̶i̶f̶i̶c̶a̶m̶e̶n̶t̶e̶ ̶a̶ ̶m̶o̶ç̶a̶ ̶d̶e̶ ̶u̶m̶ ̶d̶r̶i̶v̶e̶-̶t̶h̶r̶u̶ ̶m̶e̶ ̶c̶h̶a̶m̶a̶ ̶a̶s̶s̶i̶m̶). Tenho 20 anos e sou programador.
 

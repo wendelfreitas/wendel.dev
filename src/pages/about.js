@@ -99,7 +99,7 @@ const AboutPage = () => (
       </AboutMeWrapper>
       <SkillWrapper>
         {personal.skills.map((skill) => (
-          <Skill key={skill.name} hability={skill} />
+          <Skill key={skill.name} ability={skill} />
         ))}
       </SkillWrapper>
     </Wrapper>

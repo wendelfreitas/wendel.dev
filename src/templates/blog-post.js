@@ -6,15 +6,7 @@ import Layout from '../components/Layout';
 import RecommendedPost from '../components/RecommendedPost';
 import Comments from '../components/Comments';
 import SEO from '../components/seo';
-import {
-  Wrapper,
-  Header,
-  Date,
-  Description,
-  Title,
-  Content,
-  BackButton
-} from '../components/Post/styles';
+import { Wrapper, Header, Date, Title, Content, BackButton } from '../components/Post/styles';
 import { main } from '../styles/themes';
 
 const BlogPost = ({ data, pageContext }) => {
@@ -37,7 +29,6 @@ const BlogPost = ({ data, pageContext }) => {
             <FaLongArrowAltLeft size={30} /> Voltar para listagem
           </BackButton>
           <Title>{post.frontmatter.title}</Title>
-          <Description>{post.frontmatter.description}</Description>
         </Header>
         <Content>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
