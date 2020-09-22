@@ -56,7 +56,23 @@ const Timeline = () => (
         iconStyle={styles.content}
         icon={<MdWork />}
       >
-        <Title>Up Outsourcing!</Title>
+        <Title>Get In!</Title>
+        <h4>Remote Worke - São Paulo</h4>
+        <p>
+          Comecei como freelancer para o time da Get In e atualmente sou desenvolvedor Frontend,
+          focado no ramo de restaurantes e bebidas, trabalhando com ReactJS, Typescript e o melhor
+          da tecnologia para o Front.
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={styles.border}
+        contentArrowStyle={styles.arrow}
+        date="2019-2020"
+        iconStyle={styles.content}
+        icon={<MdWork />}
+      >
+        <Title color="black">Up Outsourcing!</Title>
         <h4>Bauru, São Paulo</h4>
         <p>
           Desenvolvedor PHP e ReactJS, trabalhando com um desafio na área de Engenharia Civil
