@@ -57,7 +57,7 @@ const Timeline = () => (
         icon={<MdWork />}
       >
         <Title>Get In!</Title>
-        <h4>Remote Worke - São Paulo</h4>
+        <h4>Remote Work - São Paulo</h4>
         <p>
           Comecei como freelancer para o time da Get In e atualmente sou desenvolvedor Frontend,
           focado no ramo de restaurantes e bebidas, trabalhando com ReactJS, Typescript e o melhor
