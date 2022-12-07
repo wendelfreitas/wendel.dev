@@ -59,7 +59,7 @@ const Timeline = () => (
         <Title>Pulley</Title>
         <h4>Vale do Silício - California</h4>
         <p>
-          Atualmente trabalhando com React, GraphQL, Hasura.
+          Atualmente trabalhando com React, GraphQL, Hasura e PSQL.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
