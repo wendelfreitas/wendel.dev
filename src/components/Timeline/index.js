@@ -48,11 +48,25 @@ const ExternalLink = styled.a`
 const Timeline = () => (
   <Wrapper>
     <VerticalTimeline>
-      <VerticalTimelineElement
+    <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={styles.content}
         contentArrowStyle={styles.arrow}
         date="atualmente"
+        iconStyle={styles.content}
+        icon={<MdWork />}
+      >
+        <Title>Pulley</Title>
+        <h4>Vale do Silício - California</h4>
+        <p>
+          Atualmente trabalhando com React, GraphQL, Hasura e PSQL.
+        </p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={styles.content}
+        contentArrowStyle={styles.arrow}
+        date="2020-2022"
         iconStyle={styles.content}
         icon={<MdWork />}
       >
