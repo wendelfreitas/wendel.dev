@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 import { Wrapper, Header, Date, Title, Content, BackButton } from '../components/Post/styles';
 import { main } from '../styles/themes';
 
-const BlogPost = ({ data, pageContext }) => {
+function BlogPost({ data, pageContext }) {
   const post = data.markdownRemark;
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
@@ -38,7 +38,7 @@ const BlogPost = ({ data, pageContext }) => {
       </Wrapper>
     </Layout>
   );
-};
+}
 
 BlogPost.propTypes = {
   data: PropTypes.shape({

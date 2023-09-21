@@ -35,7 +35,7 @@ export const PostListWrapper = styled.div`
     max-width: 100%;
   `}
 `;
-const BlogList = ({ data, pageContext }) => {
+function BlogList({ data, pageContext }) {
   const posts = data.allMarkdownRemark.edges;
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
@@ -79,15 +79,11 @@ const BlogList = ({ data, pageContext }) => {
       </Wrapper>
     </Layout>
   );
-};
+}
 
 export const query = graphql`
   query PostList($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: $limit, skip: $skip) {
       edges {
         node {
           fields {
@@ -110,7 +106,7 @@ export const query = graphql`
 BlogList.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
+      edges: PropTypes.arrayOf(PropTypes.element)
     })
   }).isRequired,
   pageContext: PropTypes.shape({

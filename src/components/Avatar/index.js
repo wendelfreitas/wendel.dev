@@ -15,7 +15,7 @@ const AVATAR_QUERY = graphql`
   }
 `;
 
-const Avatar = () => {
+function Avatar() {
   const { avatarImage } = useStaticQuery(AVATAR_QUERY);
 
   return (
@@ -23,6 +23,6 @@ const Avatar = () => {
       <Image fixed={avatarImage.childImageSharp.fixed} />
     </Email>
   );
-};
+}
 
 export default Avatar;

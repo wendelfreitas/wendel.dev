@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 
 function handleQuantityOfParticles() {
   const windowGlobal = typeof window !== 'undefined' && window;

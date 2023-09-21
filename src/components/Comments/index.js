@@ -4,7 +4,7 @@ import ReactDisqusComments from 'react-disqus-comments';
 
 import { Wrapper, Title } from './styles';
 
-const Comments = ({ url, title }) => {
+function Comments({ url, title }) {
   const completeURL = `https://wendel.dev/${url}`;
 
   return (
@@ -18,7 +18,7 @@ const Comments = ({ url, title }) => {
       />
     </Wrapper>
   );
-};
+}
 
 Comments.propTypes = {
   url: PropTypes.string.isRequired,

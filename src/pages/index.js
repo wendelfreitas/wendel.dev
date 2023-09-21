@@ -58,26 +58,29 @@ const Subtitle = styled.p`
 const Greetings = styled.div`
   ${media.lessThan('large')`
     padding: 0 2rem;
+    background: blue;
   `}
 `;
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Wrapper>
-      <Greetings>
-        <Title size={60}>Olá, </Title>
-        <Title size={50}>
-          Eu sou <Name>{author.name}</Name>,
-        </Title>
-        <Title size={55}>{author.position}</Title>
-        <Subtitle>{author.subtitle}</Subtitle>
-      </Greetings>
-      <div>
-        <Caricature />
-      </div>
-    </Wrapper>
-  </Layout>
-);
+function IndexPage() {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Wrapper>
+        <Greetings>
+          <Title size={60}>Olá, </Title>
+          <Title size={50}>
+            Eu sou <Name>{author.name}</Name>,
+          </Title>
+          <Title size={55}>{author.position}</Title>
+          <Subtitle>{author.subtitle}</Subtitle>
+        </Greetings>
+        <div>
+          <Caricature />
+        </div>
+      </Wrapper>
+    </Layout>
+  );
+}
 
 export default IndexPage;

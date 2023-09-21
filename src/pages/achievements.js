@@ -21,13 +21,15 @@ const Wrapper = styled.div`
   `}
 `;
 
-const AchievementsPage = () => (
-  <Layout padding={0}>
-    <SEO title="Conquistas" />
-    <Wrapper>
-      <Timeline />
-    </Wrapper>
-  </Layout>
-);
+function AchievementsPage() {
+  return (
+    <Layout padding={0}>
+      <SEO title="Conquistas" />
+      <Wrapper>
+        <Timeline />
+      </Wrapper>
+    </Layout>
+  );
+}
 
 export default AchievementsPage;

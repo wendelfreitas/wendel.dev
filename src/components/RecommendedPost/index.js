@@ -4,34 +4,36 @@ import propTypes from 'prop-types';
 import { Wrapper, Link } from './styles';
 import { main } from '../../styles/themes';
 
-const RecommendedPosts = ({ next, previous }) => (
-  <Wrapper>
-    {previous && (
-      <Link
-        to={previous.fields.slug}
-        cover
-        direction="left"
-        bg={main.black}
-        duration={0.8}
-        className="previous"
-      >
-        {previous.frontmatter.title}
-      </Link>
-    )}
-    {next && (
-      <Link
-        to={next.fields.slug}
-        cover
-        direction="right"
-        bg={main.black}
-        duration={0.8}
-        className="next"
-      >
-        {next.frontmatter.title}
-      </Link>
-    )}
-  </Wrapper>
-);
+function RecommendedPosts({ next, previous }) {
+  return (
+    <Wrapper>
+      {previous && (
+        <Link
+          to={previous.fields.slug}
+          cover
+          direction="left"
+          bg={main.black}
+          duration={0.8}
+          className="previous"
+        >
+          {previous.frontmatter.title}
+        </Link>
+      )}
+      {next && (
+        <Link
+          to={next.fields.slug}
+          cover
+          direction="right"
+          bg={main.black}
+          duration={0.8}
+          className="next"
+        >
+          {next.frontmatter.title}
+        </Link>
+      )}
+    </Wrapper>
+  );
+}
 
 RecommendedPosts.propTypes = {
   next: propTypes.shape({

@@ -29,16 +29,18 @@ export const Wrapper = styled.div`
   }
 `;
 
-const NotFoundPage = () => (
-  <Layout padding={2}>
-    <SEO title="404: Not found" />
-    <Wrapper>
-      <h1>404</h1>
-      <p>Já que você chegou até aqui, vou te contar dois segredos:</p>
-      <br />
-      <p>Eu tenho medo de agulhas e ainda não pisei na lua...</p>
-    </Wrapper>
-  </Layout>
-);
+function NotFoundPage() {
+  return (
+    <Layout padding={2}>
+      <SEO title="404: Not found" />
+      <Wrapper>
+        <h1>404</h1>
+        <p>Já que você chegou até aqui, vou te contar dois segredos:</p>
+        <br />
+        <p>Eu tenho medo de agulhas e ainda não pisei na lua...</p>
+      </Wrapper>
+    </Layout>
+  );
+}
 
 export default NotFoundPage;

@@ -34,10 +34,10 @@ const CARICATURE_QUERY = graphql`
   }
 `;
 
-const Caricature = () => {
+function Caricature() {
   const { caricatureImage } = useStaticQuery(CARICATURE_QUERY);
 
   return <CaricatureWrapper alt="Caricature" fluid={caricatureImage.childImageSharp.fluid} />;
-};
+}
 
 export default Caricature;

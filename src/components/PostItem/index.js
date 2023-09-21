@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { main } from '../../styles/themes';
 import { Link, Wrapper, Image, Informations, Time, Description } from './styles';
 
-const PostItem = ({ title, description, date, timeToRead, slug, icon, size }) => {
+function PostItem({ title, description, date, timeToRead, slug, icon, size }) {
   const Icon = FaIcons[icon];
   return (
     <Link cover to={slug} direction="up" bg={main.black} duration={0.6}>
@@ -22,7 +22,7 @@ const PostItem = ({ title, description, date, timeToRead, slug, icon, size }) =>
       </Wrapper>
     </Link>
   );
-};
+}
 
 PostItem.propTypes = {
   title: PropTypes.string.isRequired,

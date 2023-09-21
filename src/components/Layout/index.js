@@ -8,18 +8,20 @@ import GlobalStyle from '../../styles/global';
 import Particles from '../Particles';
 import { main } from '../../styles/themes';
 
-const Layout = ({ children, padding }) => (
-  <ThemeProvider theme={main}>
-    <Wrapper>
-      <Particles />
-      <GlobalStyle />
-      <TransitionPortal level="top">
-        <Sidebar />
-      </TransitionPortal>
-      <Main padding={padding}>{children}</Main>
-    </Wrapper>
-  </ThemeProvider>
-);
+function Layout({ children, padding }) {
+  return (
+    <ThemeProvider theme={main}>
+      <Wrapper>
+        <Particles />
+        <GlobalStyle />
+        <TransitionPortal level="top">
+          <Sidebar />
+        </TransitionPortal>
+        <Main padding={padding}>{children}</Main>
+      </Wrapper>
+    </ThemeProvider>
+  );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
